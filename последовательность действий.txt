@@ -1,0 +1,1247 @@
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT
+$ git st
+fatal: Not a git repository (or any of the parent directories): .git
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT
+$ git clone https://github.com/igribov/unicred_validation.git
+Cloning into 'unicred_validation'...
+remote: Counting objects: 147, done.
+remote: Total 147 (delta 0), reused 0 (delta 0), pack-reused 147
+Receiving objects: 100% (147/147), 692.50 KiB | 335.00 KiB/s, done.
+Resolving deltas: 100% (52/52), done.
+Checking connectivity... done.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT
+$ git config --list
+core.symlinks=false
+core.autocrlf=false
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+pack.packsizelimit=2g
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw32/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+credential.helper=manager
+user.email=imilyagribov@gmail.com
+user.name=Ilya Gribov
+alias.co=checkout
+alias.ci=commit
+alias.st=status
+alias.br=branch
+alias.hist=log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+alias.cia=commit
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT
+$ git remote origin https://github.com/igribov/unicred_validation.git
+fatal: Not a git repository (or any of the parent directories): .git
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT
+$ git st
+fatal: Not a git repository (or any of the parent directories): .git
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT
+$ cd unicred_validation/
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git remote -v
+origin  https://github.com/igribov/unicred_validation.git (fetch)
+origin  https://github.com/igribov/unicred_validation.git (push)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   app/app.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git add .
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+
+
+
+Everything up-to-date
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   app/app.js
+
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git ci -m"--"
+[master 08c1e61] --
+ 1 file changed, 1 deletion(-)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git st
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git remote -v
+origin  https://github.com/igribov/unicred_validation.git (fetch)
+origin  https://github.com/igribov/unicred_validation.git (push)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 355 bytes | 0 bytes/s, done.
+To https://github.com/igribov/unicred_validation.git
+   cbc550e..08c1e61  master -> master
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git config --global push.default origin
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation
+$ git push
+error: Malformed value for push.default: origin
+error: Must be one of nothing, matching, simple, upstream or current.
+fatal: bad config variable 'push.default' in file 'C:\Users\Илья/.gitconfig' at line 12
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation
+$ git st
+error: Malformed value for push.default: origin
+error: Must be one of nothing, matching, simple, upstream or current.
+fatal: bad config variable 'push.default' in file 'C:\Users\Илья/.gitconfig' at line 12
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation
+$ git st
+error: Malformed value for push.default: origin
+error: Must be one of nothing, matching, simple, upstream or current.
+fatal: bad config variable 'push.default' in file 'C:\Users\Илья/.gitconfig' at line 12
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation
+$ git config --global push.default
+origin
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation
+$ git config --global push.default unset
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation
+$ git config --global push.default -unset
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation
+$ git st
+error: Malformed value for push.default: -unset
+error: Must be one of nothing, matching, simple, upstream or current.
+fatal: bad config variable 'push.default' in file 'C:\Users\Илья/.gitconfig' at line 12
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation
+$ git config --global push.default ""
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation
+$ git st
+error: Malformed value for push.default:
+error: Must be one of nothing, matching, simple, upstream or current.
+fatal: bad config variable 'push.default' in file 'C:\Users\Илья/.gitconfig' at line 12
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git config user.email ilyagribov.ig@yandex.ru
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git config user.name Ilya Gribov
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git config --list
+core.symlinks=false
+core.autocrlf=false
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+pack.packsizelimit=2g
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw32/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+credential.helper=manager
+alias.co=checkout
+alias.ci=commit
+alias.st=status
+alias.br=branch
+alias.hist=log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+alias.cia=commit -a
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+core.hidedotfiles=dotGitOnly
+remote.origin.url=https://github.com/igribov/unicred_validation.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+user.email=ilyagribov.ig@yandex.ru
+user.name=Ilya
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git cia -"sjdfkg"
+error: unknown switch `j'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit hook
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   app/data.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git add .
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git ci -m"tets"
+[master 5412afb] tets
+ 1 file changed, 1 deletion(-)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 341 bytes | 0 bytes/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+To https://github.com/igribov/unicred_validation.git
+   08c1e61..5412afb  master -> master
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git config -l
+core.symlinks=false
+core.autocrlf=false
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+pack.packsizelimit=2g
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw32/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+credential.helper=manager
+alias.co=checkout
+alias.ci=commit
+alias.st=status
+alias.br=branch
+alias.hist=log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+alias.cia=commit -a
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+core.hidedotfiles=dotGitOnly
+remote.origin.url=https://github.com/igribov/unicred_validation.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+user.email=ilyagribov.ig@yandex.ru
+user.name=Ilya
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git config remote.origin.url git@github.com:^C
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git config remote.origin.url git@github.com:igribov/unicred_validation.git
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+The authenticity of host 'github.com (192.30.253.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git config remote.origin.url https://github.comigribov/unicred_validation.git
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: unable to access 'https://github.comigribov/unicred_validation.git/': Couldn't resolve host 'github.comigribov'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git config remote.origin.url https://github.comigribov/unicred_validation/
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: unable to access 'https://github.comigribov/unicred_validation/': Couldn't resolve host 'github.comigribov'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git remote -v
+origin  https://github.comigribov/unicred_validation/ (fetch)
+origin  https://github.comigribov/unicred_validation/ (push)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push origin master
+fatal: unable to access 'https://github.comigribov/unicred_validation/': Couldn't resolve host 'github.comigribov'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git config remote.origin.url https://github.com/igribov/unicred_validation/
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ git push origin master
+Everything up-to-date
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/unicred_validation (master)
+$ cd ../
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT
+$ git clone git@github.com:Ilya1024/gittest.git
+Cloning into 'gittest'...
+Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT
+$ git clone git@github.com:Ilya1024/gittest.git
+Cloning into 'gittest'...
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT
+$ git clone https://github.com/Ilya1024/gittest.git
+Cloning into 'gittest'...
+remote: Counting objects: 6, done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 6
+Unpacking objects: 100% (6/6), done.
+Checking connectivity... done.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT
+$ cd gittest/
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git remote -v
+origin  https://github.com/Ilya1024/gittest.git (fetch)
+origin  https://github.com/Ilya1024/gittest.git (push)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git add .
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git ci -m"test"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '▒▒▒▒@▒▒▒▒▒▒-▒▒.(none)')
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   "\320\265\321\203\320\265\321\2132.php"
+
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git ci -m"test"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '▒▒▒▒@▒▒▒▒▒▒-▒▒.(none)')
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git config user.email "imilyagribov@gmail.com"
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git config user.name "Gribov Ilya1"
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   "\320\265\321\203\320\265\321\2132.php"
+
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git ci -m"test"
+[master eb91732] test
+ 1 file changed, 4 insertions(+)
+ create mode 100644 "\320\265\321\203\320\265\321\2132.php"
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+remote: Permission to Ilya1024/gittest.git denied to igribov.
+fatal: unable to access 'https://github.com/Ilya1024/gittest.git/': The requested URL returned error: 403
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+remote: Permission to Ilya1024/gittest.git denied to igribov.
+fatal: unable to access 'https://github.com/Ilya1024/gittest.git/': The requested URL returned error: 403
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 2, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 244 bytes | 0 bytes/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/Ilya1024/gittest.git
+   e1feb90..eb91732  master -> master
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git st
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push origin dev
+error: src refspec dev does not match any.
+error: failed to push some refs to 'https://github.com/Ilya1024/gittest.git'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push origin/dev
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'origin/dev' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git remote -v
+origin  https://github.com/Ilya1024/gittest.git (fetch)
+origin  https://github.com/Ilya1024/gittest.git (push)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br -v
+* master eb91732 test
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push remote dev
+error: src refspec dev does not match any.
+error: failed to push some refs to 'remote'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push origin dev
+error: src refspec dev does not match any.
+error: failed to push some refs to 'https://github.com/Ilya1024/gittest.git'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push origin master:dev
+Everything up-to-date
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push origin master:dev
+
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git add .
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git ci -m"tetes"
+[master b53f6fc] tetes
+ 1 file changed, 4 insertions(+)
+ create mode 100644 dev.php
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push origin master:dev
+Counting objects: 2, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 233 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+To https://github.com/Ilya1024/gittest.git
+   eb91732..b53f6fc  master -> dev
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git st
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br dev
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git co dev
+Switched to branch 'dev'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (dev)
+$ git co master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git co --track origin/dev
+fatal: A branch named 'dev' already exists.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push u prigin dev
+error: src refspec prigin does not match any.
+error: failed to push some refs to 'u'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push -u prigin dev
+fatal: 'prigin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push -u origin dev
+Branch dev set up to track remote branch dev from origin.
+Everything up-to-date
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push -u origin dev
+
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git add .
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git ci -m"test2"
+[master efc8049] test2
+ 1 file changed, 1 insertion(+)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push -u origin dev
+Branch dev set up to track remote branch dev from origin.
+Everything up-to-date
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git help push
+Launching default browser to display HTML ...
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git add .
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git st
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    "\320\265\321\203\320\265\321\2132.php" -> dev2.php
+
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git ci -m"test2"
+[master c80fd2a] test2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename "\320\265\321\203\320\265\321\2132.php" => dev2.php (100%)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push -u origin dev2
+error: src refspec dev2 does not match any.
+error: failed to push some refs to 'https://github.com/Ilya1024/gittest.git'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git push -u origin dev2
+error: src refspec dev2 does not match any.
+error: failed to push some refs to 'https://github.com/Ilya1024/gittest.git'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br development2
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br -d development2
+Deleted branch development2 (was c80fd2a).
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br --track development origin/dev2
+error: the requested upstream branch 'origin/dev2' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br --track development2 origin/dev2
+error: the requested upstream branch 'origin/dev2' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br -v
+  dev    b53f6fc tetes
+* master c80fd2a [ahead 3] test2
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br development2
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br --track development2 origin/dev2
+fatal: A branch named 'development2' already exists.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br -d development2
+Deleted branch development2 (was c80fd2a).
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br --track development2 origin/dev2
+error: the requested upstream branch 'origin/dev2' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git fetch origin
+fatal: unable to access 'https://github.com/Ilya1024/gittest.git/': Couldn't resolve host 'github.com'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git fetch origin
+From https://github.com/Ilya1024/gittest
+ * [new branch]      dev2       -> origin/dev2
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git br --track development2 origin/dev2
+Branch development2 set up to track remote branch dev2 from origin.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git st
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (master)
+$ git co development2
+Switched to branch 'development2'
+Your branch is up-to-date with 'origin/dev2'.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git br -v
+  dev          b53f6fc tetes
+* development2 b53f6fc tetes
+  master       c80fd2a [ahead 3] test2
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git st
+On branch development2
+Your branch is up-to-date with 'origin/dev2'.
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git as
+git: 'as' is not a git command. See 'git --help'.
+
+Did you mean this?
+        am
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git st
+On branch development2
+Your branch is up-to-date with 'origin/dev2'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    "\320\265\321\203\320\265\321\2132.php"
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        "\320\224\320\222\320\224\320\222.php"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git add .
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git st
+On branch development2
+Your branch is up-to-date with 'origin/dev2'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    "\320\265\321\203\320\265\321\2132.php" -> "\320\224\320\222\320\224\320\222.php"
+
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git ci -m"test3"
+[development2 ae341d1] test3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename "\320\265\321\203\320\265\321\2132.php" => "\320\224\320\222\320\224\320\222.php" (100%)
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git st
+On branch development2
+Your branch is ahead of 'origin/dev2' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git push -u origin
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:dev2
+
+To push to the branch of the same name on the remote, use
+
+    git push origin development2
+
+To choose either option permanently, see push.default in 'git help config'.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git push -u origin dev2
+error: src refspec dev2 does not match any.
+error: failed to push some refs to 'https://github.com/Ilya1024/gittest.git'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git st
+On branch development2
+Your branch is ahead of 'origin/dev2' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:dev2
+
+To push to the branch of the same name on the remote, use
+
+    git push origin development2
+
+To choose either option permanently, see push.default in 'git help config'.
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git config --global push default simple
+error: key does not contain a section: push
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git config --global push.default simple
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:dev2
+
+To push to the branch of the same name on the remote, use
+
+    git push origin development2
+
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git push origin dev2
+error: src refspec dev2 does not match any.
+error: failed to push some refs to 'https://github.com/Ilya1024/gittest.git'
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$ git push origin HEAD:dev2
+Counting objects: 2, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 228 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+To https://github.com/Ilya1024/gittest.git
+   b53f6fc..ae341d1  HEAD -> dev2
+
+Илья@▒▒▒▒▒▒-▒▒ MINGW32 ~/Desktop/GIT/gittest (development2)
+$
